@@ -1027,6 +1027,217 @@ section { position: relative; }
 }
 
 /* ==========================================================================
+   Trust Strip
+   ========================================================================== */
+
+.trust-strip {
+  background: var(--navy-900);
+  padding: 14px 0;
+  overflow: hidden;
+}
+.trust-strip-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px 20px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: rgba(246, 242, 233, 0.7);
+}
+.trust-dot {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: var(--copper);
+  flex-shrink: 0;
+}
+
+/* ==========================================================================
+   Hero trust badges
+   ========================================================================== */
+
+.hero-trust {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px 14px;
+  margin-top: 20px;
+}
+.hero-trust-badge {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: rgba(246, 242, 233, 0.65);
+  letter-spacing: 0.04em;
+}
+.hero-trust-sep {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: var(--copper);
+  flex-shrink: 0;
+}
+
+/* ==========================================================================
+   Blog
+   ========================================================================== */
+
+.blog { padding: 110px 0; background: var(--white); }
+
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.blog-card {
+  background: var(--paper);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.35s var(--ease), box-shadow 0.35s var(--ease);
+}
+.blog-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-soft); }
+
+.blog-thumb {
+  height: 180px;
+  flex-shrink: 0;
+}
+.blog-thumb-1 { background: linear-gradient(135deg, var(--navy-800), var(--teal-deep)); }
+.blog-thumb-2 { background: linear-gradient(135deg, var(--copper-deep), var(--copper-bright)); }
+.blog-thumb-3 { background: linear-gradient(135deg, var(--navy-700), var(--navy-600)); }
+
+.blog-body {
+  padding: 28px 28px 24px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.blog-tag {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--copper-deep);
+  margin-bottom: 12px;
+}
+
+.blog-title {
+  font-size: 1.1rem;
+  margin-bottom: 12px;
+  line-height: 1.3;
+  color: var(--navy-900);
+}
+
+.blog-excerpt {
+  font-size: 0.93rem;
+  color: var(--slate);
+  line-height: 1.7;
+  flex: 1;
+  margin-bottom: 20px;
+}
+
+.blog-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  color: var(--slate-light);
+  border-top: 1px solid var(--border-light);
+  padding-top: 16px;
+}
+
+.blog-link {
+  color: var(--copper-deep);
+  font-weight: 600;
+  transition: color 0.2s;
+}
+.blog-link:hover { color: var(--copper-bright); }
+
+/* ==========================================================================
+   Book a Call
+   ========================================================================== */
+
+.book-call {
+  padding: 100px 0;
+  background: linear-gradient(155deg, var(--navy-950), var(--navy-800));
+  position: relative;
+  overflow: hidden;
+}
+.book-call::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(circle at 70% 50%, rgba(111,205,193,0.07) 0%, transparent 60%);
+  pointer-events: none;
+}
+
+.book-call-inner {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 60px;
+  align-items: center;
+}
+
+.book-call-perks {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 24px;
+}
+.book-call-perks li {
+  font-size: 0.95rem;
+  color: rgba(246, 242, 233, 0.7);
+  padding-left: 22px;
+  position: relative;
+}
+.book-call-perks li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--teal);
+  font-weight: 700;
+}
+
+.book-call-cta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  flex-shrink: 0;
+}
+
+.btn-copper {
+  background: linear-gradient(135deg, var(--copper-bright), var(--copper));
+  color: var(--navy-950);
+  font-weight: 700;
+  border: none;
+  white-space: nowrap;
+}
+.btn-copper:hover {
+  background: linear-gradient(135deg, #f9c47a, var(--copper-bright));
+  transform: translateY(-2px);
+  box-shadow: 0 12px 32px -10px rgba(217,154,78,0.6);
+}
+.btn-xl {
+  padding: 18px 38px;
+  font-size: 1.05rem;
+  border-radius: var(--radius-md);
+}
+
+.book-call-note {
+  font-size: 0.8rem;
+  color: rgba(246, 242, 233, 0.45);
+  text-align: center;
+}
+
+/* ==========================================================================
    Footer
    ========================================================================== */
 
@@ -1089,6 +1300,9 @@ section { position: relative; }
   .about-inner { grid-template-columns: minmax(0, 1fr); gap: 56px; }
   .about-visual { max-width: 420px; margin: 0 auto; }
   .contact-inner { grid-template-columns: minmax(0, 1fr); gap: 48px; }
+  .blog-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .book-call-inner { grid-template-columns: minmax(0, 1fr); gap: 40px; }
+  .book-call-cta { align-items: flex-start; }
 }
 
 @media (max-width: 860px) {
@@ -1113,12 +1327,15 @@ section { position: relative; }
   .hero-stats { gap: 32px; }
   .form-row { grid-template-columns: minmax(0, 1fr); }
   .footer-inner { grid-template-columns: minmax(0, 1fr); gap: 40px; }
+  .trust-strip-inner { gap: 8px 14px; }
+  .trust-dot { display: none; }
 }
 
 @media (max-width: 680px) {
   .container { padding: 0 20px; }
   .services-grid { grid-template-columns: minmax(0, 1fr); }
   .portfolio-grid { grid-template-columns: minmax(0, 1fr); }
+  .blog-grid { grid-template-columns: minmax(0, 1fr); }
   .process-steps { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .footer-links { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .footer-bottom { flex-direction: column; text-align: center; }
@@ -1126,6 +1343,8 @@ section { position: relative; }
   .hero-actions .btn { width: 100%; }
   .contact-form { padding: 28px 22px; }
   .testimonial-card { width: 86vw; }
+  .book-call-cta { align-items: stretch; }
+  .btn-xl { text-align: center; }
 }
 
 @media (prefers-reduced-motion: reduce) {
