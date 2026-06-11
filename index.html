@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>WebForge Studio — Websites, Built to Work</title>
+<meta name="description" content="WebForge Studio designs and builds fast, beautiful, conversion-ready websites for small businesses and growing brands — from first sketch to launch day." />
+<meta name="theme-color" content="#0c1c33" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230c1c33'/%3E%3Crect x='16' y='16' width='32' height='32' fill='none' stroke='%23d99a4e' stroke-width='3'/%3E%3Crect x='26' y='26' width='12' height='12' fill='%23d99a4e' transform='rotate(45 32 32)'/%3E%3C/svg%3E" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a> 
+
+<div class="grain" aria-hidden="true"></div>
+
+<header class="site-header" id="siteHeader">
+  <div class="container header-inner">
+    <a href="#top" class="logo" aria-label="WebForge Studio — home">
+      <span class="logo-mark" aria-hidden="true">
+        <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="1" y="1" width="32" height="32" rx="8" fill="#0c1c33"/>
+          <rect x="8" y="8" width="18" height="18" rx="2" fill="none" stroke="#d99a4e" stroke-width="2"/>
+          <rect x="13.5" y="13.5" width="7" height="7" rx="1" fill="#d99a4e" transform="rotate(45 17 17)"/>
+        </svg>
+      </span>
+      <span class="logo-text">WebForge<em>Studio</em></span>
+    </a>
+
+    <nav class="nav" id="primaryNav" aria-label="Primary">
+      <a href="#services" class="nav-link">Services</a>
+      <a href="#process" class="nav-link">Process</a>
+      <a href="#work" class="nav-link">Work</a>
+      <a href="#faq" class="nav-link">FAQ</a>
+      <a href="#testimonials" class="nav-link">Reviews</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#contact" class="btn btn-primary btn-sm nav-cta">Get a Quote</a>
+    </nav>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="primaryNav">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="top">
+    <div class="hero-bg" aria-hidden="true">
+      <div class="hero-grid"></div>
+      <div class="hero-glow" id="heroGlow"></div>
+    </div>
+
+    <div class="container hero-inner">
+      <div class="hero-content" data-reveal>
+        <p class="eyebrow eyebrow-light">Web Design &amp; Development Studio</p>
+        <h1 class="hero-title">We design websites that <em>work</em> as hard as you do.</h1>
+        <p class="hero-sub">WebForge Studio plans, designs and builds fast, conversion-focused websites for small businesses and growing brands — from the first sketch to launch day, and every update after.</p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary btn-lg">Get a Free Quote</a>
+          <a href="#work" class="btn btn-ghost btn-lg">View Our Work</a>
+        </div>
+        <dl class="hero-stats">
+          <div class="hero-stat">
+            <dt class="stat-num" data-count="120" data-suffix="+">0</dt>
+            <dd>Sites launched</dd>
+          </div>
+          <div class="hero-stat">
+            <dt class="stat-num" data-count="49" data-decimal="1" data-prefix-text="" data-suffix="/5">0</dt>
+            <dd>Average client rating</dd>
+          </div>
+          <div class="hero-stat">
+            <dt class="stat-num" data-count="14" data-suffix=" days">0</dt>
+            <dd>Average delivery</dd>
+          </div>
+        </dl>
+      </div>
+
+      <div class="hero-visual" data-reveal data-reveal-delay="200">
+        <svg class="blueprint-svg" viewBox="0 0 640 480" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Illustration of a website wireframe being drawn and designed">
+          <!-- corner crosshairs -->
+          <g class="bp-corners draw" stroke="#6fcdc1" stroke-width="1.5" stroke-linecap="round">
+            <path d="M22 40 L22 22 L40 22"/>
+            <path d="M600 22 L618 22 L618 40"/>
+            <path d="M618 440 L618 458 L600 458"/>
+            <path d="M40 458 L22 458 L22 440"/>
+          </g>
+
+          <!-- main frame -->
+          <rect class="bp-line draw" x="40" y="40" width="560" height="400" rx="14" stroke="#6fcdc1" stroke-width="1.5"/>
+          <!-- top bar -->
+          <line class="bp-line draw" x1="40" y1="98" x2="600" y2="98" stroke="#6fcdc1" stroke-width="1.5"/>
+          <circle class="bp-line draw" cx="68" cy="69" r="6" stroke="#6fcdc1" stroke-width="1.5"/>
+          <circle class="bp-line draw" cx="92" cy="69" r="6" stroke="#6fcdc1" stroke-width="1.5"/>
+          <circle class="bp-line draw" cx="116" cy="69" r="6" stroke="#6fcdc1" stroke-width="1.5"/>
+          <rect class="bp-line draw" x="160" y="56" width="340" height="26" rx="13" stroke="#6fcdc1" stroke-width="1.5"/>
+
+          <!-- sidebar nav lines -->
+          <g class="bp-line draw" stroke="#6fcdc1" stroke-width="1.5" stroke-linecap="round">
+            <line x1="64" y1="138" x2="150" y2="138"/>
+            <line x1="64" y1="166" x2="150" y2="166"/>
+            <line x1="64" y1="194" x2="150" y2="194"/>
+            <line x1="64" y1="222" x2="150" y2="222"/>
+            <line x1="64" y1="250" x2="150" y2="250"/>
+          </g>
+
+          <!-- hero block outline -->
+          <rect class="bp-line draw" x="180" y="124" width="380" height="130" rx="8" stroke="#6fcdc1" stroke-width="1.5"/>
+          <!-- card outlines -->
+          <rect class="bp-line draw" x="180" y="270" width="118" height="120" rx="8" stroke="#6fcdc1" stroke-width="1.5"/>
+          <rect class="bp-line draw" x="312" y="270" width="118" height="120" rx="8" stroke="#6fcdc1" stroke-width="1.5"/>
+          <rect class="bp-line draw" x="444" y="270" width="116" height="120" rx="8" stroke="#6fcdc1" stroke-width="1.5"/>
+
+          <!-- filled "designed" blocks -->
+          <rect class="bp-fill fill-1" x="196" y="142" width="180" height="20" rx="4" fill="#d99a4e"/>
+          <rect class="bp-fill fill-1" x="196" y="174" width="260" height="10" rx="3" fill="#3f9c91"/>
+          <rect class="bp-fill fill-1" x="196" y="194" width="220" height="10" rx="3" fill="#3f9c91" opacity="0.6"/>
+          <rect class="bp-fill fill-2" x="196" y="226" width="120" height="14" rx="7" fill="#f2b768"/>
+
+          <rect class="bp-fill fill-3" x="196" y="286" width="86" height="50" rx="4" fill="#3f9c91" opacity="0.55"/>
+          <rect class="bp-fill fill-3" x="196" y="346" width="86" height="8" rx="3" fill="#8a96a8"/>
+          <rect class="bp-fill fill-3" x="196" y="362" width="60" height="8" rx="3" fill="#8a96a8" opacity="0.6"/>
+
+          <rect class="bp-fill fill-4" x="328" y="286" width="86" height="50" rx="4" fill="#d99a4e" opacity="0.55"/>
+          <rect class="bp-fill fill-4" x="328" y="346" width="86" height="8" rx="3" fill="#8a96a8"/>
+          <rect class="bp-fill fill-4" x="328" y="362" width="56" height="8" rx="3" fill="#8a96a8" opacity="0.6"/>
+
+          <rect class="bp-fill fill-5" x="460" y="286" width="86" height="50" rx="4" fill="#6fcdc1" opacity="0.55"/>
+          <rect class="bp-fill fill-5" x="460" y="346" width="86" height="8" rx="3" fill="#8a96a8"/>
+          <rect class="bp-fill fill-5" x="460" y="362" width="50" height="8" rx="3" fill="#8a96a8" opacity="0.6"/>
+
+          <!-- annotation -->
+          <g class="bp-annotation draw">
+            <line x1="40" y1="466" x2="600" y2="466" stroke="#d99a4e" stroke-width="1" stroke-dasharray="4 4"/>
+            <line x1="40" y1="460" x2="40" y2="472" stroke="#d99a4e" stroke-width="1"/>
+            <line x1="600" y1="460" x2="600" y2="472" stroke="#d99a4e" stroke-width="1"/>
+          </g>
+          <text class="bp-text" x="320" y="478" fill="#d99a4e" font-family="Work Sans, sans-serif" font-size="13" text-anchor="middle" letter-spacing="2">RESPONSIVE — 100% FLUID</text>
+        </svg>
+      </div>
+    </div>
+
+    <a href="#services" class="scroll-cue" aria-label="Scroll to services">
+      <span></span>
+    </a>
+  </section>
+
+  <!-- ============ SERVICES ============ -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <p class="eyebrow">What We Do</p>
+        <h2 class="section-title">Everything you need to launch <em>and grow</em> online</h2>
+        <p class="section-sub">From a single landing page to a full storefront, we handle strategy, design, copy and code — so you can focus on running your business.</p>
+      </div>
+
+      <div class="services-grid">
+
+        <article class="service-card" data-reveal>
+          <div class="service-icon">
+            <svg viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="3" y="4" width="22" height="20" rx="2" stroke="currentColor" stroke-width="1.6"/>
+              <line x1="3" y1="10" x2="25" y2="10" stroke="currentColor" stroke-width="1.6"/>
+              <line x1="8" y1="14.5" x2="20" y2="14.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+              <line x1="8" y1="18.5" x2="16" y2="18.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>Custom Website Design</h3>
+          <p>A site designed from scratch around your brand, your customers and your goals — never a generic template.</p>
+        </article>
+
+        <article class="service-card" data-reveal data-reveal-delay="80">
+          <div class="service-icon">
+            <svg viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5 8h18l-1.8 10.5a2 2 0 0 1-2 1.66H8.8a2 2 0 0 1-2-1.66L5 8Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+              <path d="M9 8V6.5A3.5 3.5 0 0 1 12.5 3h3A3.5 3.5 0 0 1 19 6.5V8" stroke="currentColor" stroke-width="1.6"/>
+              <circle cx="11.5" cy="24" r="1.4" fill="currentColor"/>
+              <circle cx="17.5" cy="24" r="1.4" fill="currentColor"/>
+            </svg>
+          </div>
+          <h3>E-Commerce Development</h3>
+          <p>Sell products or services online with a fast, secure store — product pages, cart, checkout and payments included.</p>
+        </article>
+
+        <article class="service-card" data-reveal data-reveal-delay="160">
+          <div class="service-icon">
+            <svg viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M22.5 8.5A8.96 8.96 0 0 0 14 4a9 9 0 1 0 8.94 10" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+              <path d="M22.5 3v5.5H17" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3>Website Redesign</h3>
+          <p>Outgrown your current site? We modernize the design, speed up performance and improve usability — without losing your SEO rankings.</p>
+        </article>
+
+        <article class="service-card" data-reveal>
+          <div class="service-icon">
+            <svg viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="12" cy="12" r="7.5" stroke="currentColor" stroke-width="1.6"/>
+              <line x1="17.3" y1="17.3" x2="24" y2="24" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+              <path d="M8 13.5l2.2-3.2L13 13l3.5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3>SEO &amp; Local Search</h3>
+          <p>On-page SEO, structured data and Google Business Profile setup so customers can actually find you.</p>
+        </article>
+
+        <article class="service-card" data-reveal data-reveal-delay="80">
+          <div class="service-icon">
+            <svg viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="11" cy="11" r="6.5" stroke="currentColor" stroke-width="1.6"/>
+              <circle cx="17" cy="17" r="6.5" stroke="currentColor" stroke-width="1.6"/>
+            </svg>
+          </div>
+          <h3>Branding &amp; Identity</h3>
+          <p>Logo, color palette, typography and brand guidelines that carry through your website and marketing materials.</p>
+        </article>
+
+        <article class="service-card" data-reveal data-reveal-delay="160">
+          <div class="service-icon">
+            <svg viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M14 3.5l1.8 3.7 4 .6-2.9 2.9.7 4-3.6-1.9-3.6 1.9.7-4-2.9-2.9 4-.6L14 3.5Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+              <path d="M5 18.5l2 5.5 2-2.2 3 1-2-4.3" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/>
+              <path d="M23 18.5l-2 5.5-2-2.2-3 1 2-4.3" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>Care Plans &amp; Maintenance</h3>
+          <p>Ongoing updates, security monitoring, backups and small content changes — so your site stays fast and current.</p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROCESS ============ -->
+  <section class="process" id="process">
+    <div class="hero-grid process-grid-bg" aria-hidden="true"></div>
+    <div class="container">
+      <div class="section-head light-on-dark" data-reveal>
+        <p class="eyebrow eyebrow-light">How We Work</p>
+        <h2 class="section-title section-title-light">From blueprint to <em>launch</em> in five steps</h2>
+        <p class="section-sub section-sub-light">A clear, collaborative process so you always know what's happening and what's next.</p>
+      </div>
+
+      <ol class="process-steps">
+        <li class="process-step" data-reveal>
+          <span class="step-number">01</span>
+          <h3>Discover</h3>
+          <p>We learn about your business, audience and goals with a short questionnaire and kickoff call.</p>
+        </li>
+        <li class="process-step" data-reveal data-reveal-delay="80">
+          <span class="step-number">02</span>
+          <h3>Plan</h3>
+          <p>We map your sitemap and content, and lock in scope, timeline and pricing — no surprises later.</p>
+        </li>
+        <li class="process-step" data-reveal data-reveal-delay="160">
+          <span class="step-number">03</span>
+          <h3>Design</h3>
+          <p>You'll review a custom homepage design and key pages, with rounds of feedback built in.</p>
+        </li>
+        <li class="process-step" data-reveal data-reveal-delay="240">
+          <span class="step-number">04</span>
+          <h3>Build</h3>
+          <p>We develop your site to be fast, responsive and easy to update, then test it across devices.</p>
+        </li>
+        <li class="process-step" data-reveal data-reveal-delay="320">
+          <span class="step-number">05</span>
+          <h3>Launch &amp; Support</h3>
+          <p>We go live, hand over training, and stick around for ongoing support and improvements.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============ PORTFOLIO ============ -->
+  <section class="portfolio" id="work">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <p class="eyebrow">Selected Work</p>
+        <h2 class="section-title">Real businesses, <em>real results</em></h2>
+        <p class="section-sub">A few examples of the kind of sites we build — clean, fast, and built around what each business actually needed.</p>
+      </div>
+
+      <div class="portfolio-grid">
+
+        <article class="portfolio-card" data-reveal>
+          <div class="portfolio-thumb thumb-solstice">
+            <div class="mockup">
+              <div class="mockup-bar"><span></span><span></span><span></span></div>
+              <div class="mockup-body">
+                <div class="m-block m-hero"></div>
+                <div class="m-row"><div class="m-block m-card"></div><div class="m-block m-card"></div><div class="m-block m-card"></div></div>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-info">
+            <span class="tag">Case Study</span>
+            <h3>Not Developed Yet</h3>
+            <p>This project showcase hasn't been built yet — check back soon.</p>
+          </div>
+        </article>
+
+        <article class="portfolio-card" data-reveal data-reveal-delay="80">
+          <div class="portfolio-thumb thumb-marrow">
+            <div class="mockup">
+              <div class="mockup-bar"><span></span><span></span><span></span></div>
+              <div class="mockup-body">
+                <div class="m-block m-hero"></div>
+                <div class="m-row"><div class="m-block m-card wide"></div><div class="m-block m-card"></div></div>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-info">
+            <span class="tag">Case Study</span>
+            <h3>Not Developed Yet</h3>
+            <p>This project showcase hasn't been built yet — check back soon.</p>
+          </div>
+        </article>
+
+        <article class="portfolio-card" data-reveal data-reveal-delay="160">
+          <div class="portfolio-thumb thumb-northbeam">
+            <div class="mockup">
+              <div class="mockup-bar"><span></span><span></span><span></span></div>
+              <div class="mockup-body">
+                <div class="m-block m-hero split"></div>
+                <div class="m-row"><div class="m-block m-card"></div><div class="m-block m-card"></div><div class="m-block m-card"></div></div>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-info">
+            <span class="tag">Case Study</span>
+            <h3>Not Developed Yet</h3>
+            <p>This project showcase hasn't been built yet — check back soon.</p>
+          </div>
+        </article>
+
+        <article class="portfolio-card" data-reveal>
+          <div class="portfolio-thumb thumb-casa">
+            <div class="mockup">
+              <div class="mockup-bar"><span></span><span></span><span></span></div>
+              <div class="mockup-body">
+                <div class="m-block m-hero"></div>
+                <div class="m-row"><div class="m-block m-card"></div><div class="m-block m-card"></div></div>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-info">
+            <span class="tag">Case Study</span>
+            <h3>Not Developed Yet</h3>
+            <p>This project showcase hasn't been built yet — check back soon.</p>
+          </div>
+        </article>
+
+        <article class="portfolio-card" data-reveal data-reveal-delay="80">
+          <div class="portfolio-thumb thumb-lumen">
+            <div class="mockup">
+              <div class="mockup-bar"><span></span><span></span><span></span></div>
+              <div class="mockup-body">
+                <div class="m-block m-hero"></div>
+                <div class="m-row"><div class="m-block m-card wide"></div><div class="m-block m-card"></div></div>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-info">
+            <span class="tag">Case Study</span>
+            <h3>Not Developed Yet</h3>
+            <p>This project showcase hasn't been built yet — check back soon.</p>
+          </div>
+        </article>
+
+        <article class="portfolio-card" data-reveal data-reveal-delay="160">
+          <div class="portfolio-thumb thumb-terra">
+            <div class="mockup">
+              <div class="mockup-bar"><span></span><span></span><span></span></div>
+              <div class="mockup-body">
+                <div class="m-block m-hero"></div>
+                <div class="m-row"><div class="m-block m-card"></div><div class="m-block m-card"></div><div class="m-block m-card"></div></div>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-info">
+            <span class="tag">Case Study</span>
+            <h3>Not Developed Yet</h3>
+            <p>This project showcase hasn't been built yet — check back soon.</p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section class="faq" id="faq">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <p class="eyebrow">FAQ</p>
+        <h2 class="section-title">Questions, <em>answered</em></h2>
+        <p class="section-sub">Everything you need to know before getting started. Don't see your question here? Just ask.</p>
+      </div>
+
+      <div class="faq-list">
+
+        <details class="faq-item" data-reveal>
+          <summary class="faq-question">
+            <span>How long does a typical project take?</span>
+            <span class="faq-icon" aria-hidden="true"></span>
+          </summary>
+          <div class="faq-answer">
+            <p>Most projects take 2–6 weeks from kickoff to launch, depending on scope and how quickly we receive feedback and content. Larger e-commerce or custom-feature builds may take a bit longer.</p>
+          </div>
+        </details>
+
+        <details class="faq-item" data-reveal data-reveal-delay="60">
+          <summary class="faq-question">
+            <span>How much does a website cost?</span>
+            <span class="faq-icon" aria-hidden="true"></span>
+          </summary>
+          <div class="faq-answer">
+            <p>Every project is scoped individually based on the number of pages, features, and complexity involved. After a free discovery call, you'll get a clear, fixed-price quote — no surprise fees.</p>
+          </div>
+        </details>
+
+        <details class="faq-item" data-reveal data-reveal-delay="120">
+          <summary class="faq-question">
+            <span>Do I own the website once it's finished?</span>
+            <span class="faq-icon" aria-hidden="true"></span>
+          </summary>
+          <div class="faq-answer">
+            <p>Yes. Once the project is paid in full, the code, design files, and content are yours outright — no lock-in and no recurring licensing fees.</p>
+          </div>
+        </details>
+
+        <details class="faq-item" data-reveal>
+          <summary class="faq-question">
+            <span>What do you need from me to get started?</span>
+            <span class="faq-icon" aria-hidden="true"></span>
+          </summary>
+          <div class="faq-answer">
+            <p>A short brief about your business and goals, any branding assets you already have (logo, colors, fonts), and content for each page — or we can help you write it.</p>
+          </div>
+        </details>
+
+        <details class="faq-item" data-reveal data-reveal-delay="60">
+          <summary class="faq-question">
+            <span>Do you offer support after launch?</span>
+            <span class="faq-icon" aria-hidden="true"></span>
+          </summary>
+          <div class="faq-answer">
+            <p>Yes. We offer optional maintenance and support plans for updates, hosting, and security patches — or you can manage everything yourself with a simple, easy-to-use CMS.</p>
+          </div>
+        </details>
+
+        <details class="faq-item" data-reveal data-reveal-delay="120">
+          <summary class="faq-question">
+            <span>Can you redesign or improve my existing website?</span>
+            <span class="faq-icon" aria-hidden="true"></span>
+          </summary>
+          <div class="faq-answer">
+            <p>Absolutely. We regularly take over existing sites to modernize the design, improve performance, and fix usability issues — without losing your current SEO rankings.</p>
+          </div>
+        </details>
+
+      </div>
+
+      <p class="section-footnote">Still have questions? <a href="#contact">Get in touch →</a></p>
+    </div>
+  </section>
+
+  <!-- ============ TESTIMONIALS ============ -->
+  <section class="testimonials" id="testimonials">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <p class="eyebrow">Client Reviews</p>
+        <h2 class="section-title">Don't just take <em>our word</em> for it</h2>
+      </div>
+    </div>
+
+    <div class="testimonials-track-wrap" data-reveal>
+      <div class="testimonials-track">
+
+        <figure class="testimonial-card">
+          <div class="stars" aria-hidden="true">★★★★★</div>
+          <blockquote>"WebForge took our scattered ideas and turned them into a site that actually brings in bookings every week. The process was smooth from start to finish."</blockquote>
+          <figcaption><strong>Maya Chen</strong><span>Owner, Marrow Kitchen</span></figcaption>
+        </figure>
+
+        <figure class="testimonial-card">
+          <div class="stars" aria-hidden="true">★★★★★</div>
+          <blockquote>"Our old site looked like it was from 2010. The redesign is fast, modern, and our SEO traffic has nearly doubled in three months."</blockquote>
+          <figcaption><strong>Daniel Reyes</strong><span>Founder, Northbeam Analytics</span></figcaption>
+        </figure>
+
+        <figure class="testimonial-card">
+          <div class="stars" aria-hidden="true">★★★★★</div>
+          <blockquote>"They explained everything in plain English, kept us updated weekly, and delivered exactly on schedule. Highly recommend for any small business."</blockquote>
+          <figcaption><strong>Priya Nair</strong><span>Director, Lumen Health Clinic</span></figcaption>
+        </figure>
+
+        <figure class="testimonial-card">
+          <div class="stars" aria-hidden="true">★★★★★</div>
+          <blockquote>"The online store WebForge built paid for itself in the first month. Checkout is smooth and our customers constantly compliment the design."</blockquote>
+          <figcaption><strong>Tom Whitfield</strong><span>Co-founder, Solstice &amp; Co.</span></figcaption>
+        </figure>
+
+        <figure class="testimonial-card">
+          <div class="stars" aria-hidden="true">★★★★★</div>
+          <blockquote>"Professional, responsive, and genuinely invested in our mission. The new donation flow has made giving so much easier for our supporters."</blockquote>
+          <figcaption><strong>Aisha Bello</strong><span>Program Lead, Terra Foundation</span></figcaption>
+        </figure>
+
+        <!-- duplicate set for seamless marquee -->
+        <figure class="testimonial-card" aria-hidden="true">
+          <div class="stars">★★★★★</div>
+          <blockquote>"WebForge took our scattered ideas and turned them into a site that actually brings in bookings every week. The process was smooth from start to finish."</blockquote>
+          <figcaption><strong>Maya Chen</strong><span>Owner, Marrow Kitchen</span></figcaption>
+        </figure>
+
+        <figure class="testimonial-card" aria-hidden="true">
+          <div class="stars">★★★★★</div>
+          <blockquote>"Our old site looked like it was from 2010. The redesign is fast, modern, and our SEO traffic has nearly doubled in three months."</blockquote>
+          <figcaption><strong>Daniel Reyes</strong><span>Founder, Northbeam Analytics</span></figcaption>
+        </figure>
+
+        <figure class="testimonial-card" aria-hidden="true">
+          <div class="stars">★★★★★</div>
+          <blockquote>"They explained everything in plain English, kept us updated weekly, and delivered exactly on schedule. Highly recommend for any small business."</blockquote>
+          <figcaption><strong>Priya Nair</strong><span>Director, Lumen Health Clinic</span></figcaption>
+        </figure>
+
+        <figure class="testimonial-card" aria-hidden="true">
+          <div class="stars">★★★★★</div>
+          <blockquote>"The online store WebForge built paid for itself in the first month. Checkout is smooth and our customers constantly compliment the design."</blockquote>
+          <figcaption><strong>Tom Whitfield</strong><span>Co-founder, Solstice &amp; Co.</span></figcaption>
+        </figure>
+
+        <figure class="testimonial-card" aria-hidden="true">
+          <div class="stars">★★★★★</div>
+          <blockquote>"Professional, responsive, and genuinely invested in our mission. The new donation flow has made giving so much easier for our supporters."</blockquote>
+          <figcaption><strong>Aisha Bello</strong><span>Program Lead, Terra Foundation</span></figcaption>
+        </figure>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="about" id="about">
+    <div class="container about-inner">
+      <div class="about-content" data-reveal>
+        <p class="eyebrow">Why WebForge Studio</p>
+        <h2 class="section-title">A small studio, <em>fully invested</em> in your project</h2>
+        <p>We're a boutique web design studio — which means no account managers shuffling you between teams, no bloated retainers, and no cookie-cutter templates. Just a small team that designs, builds and supports every site we ship.</p>
+        <ul class="about-list">
+          <li><span class="check" aria-hidden="true">✓</span> Direct access to your designer &amp; developer</li>
+          <li><span class="check" aria-hidden="true">✓</span> Transparent, fixed-price quotes — no hidden fees</li>
+          <li><span class="check" aria-hidden="true">✓</span> Built on fast, modern, SEO-friendly foundations</li>
+          <li><span class="check" aria-hidden="true">✓</span> You own your site, code and content — always</li>
+        </ul>
+        <a href="#contact" class="btn btn-primary">Start Your Project</a>
+      </div>
+      <div class="about-visual" data-reveal data-reveal-delay="160" aria-hidden="true">
+        <div class="about-card card-1">
+          <span class="about-card-num">98%</span>
+          <span class="about-card-label">Client satisfaction</span>
+        </div>
+        <div class="about-card card-2">
+          <span class="about-card-num">5+</span>
+          <span class="about-card-label">Years in business</span>
+        </div>
+        <div class="about-card card-3">
+          <span class="about-card-num">24h</span>
+          <span class="about-card-label">Avg. response time</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="contact" id="contact">
+    <div class="hero-grid process-grid-bg" aria-hidden="true"></div>
+    <div class="container contact-inner">
+      <div class="contact-info" data-reveal>
+        <p class="eyebrow eyebrow-light">Get In Touch</p>
+        <h2 class="section-title section-title-light">Let's build something <em>great</em>.</h2>
+        <p class="section-sub section-sub-light">Tell us a bit about your project and we'll get back to you within one business day with next steps and a free quote.</p>
+        <ul class="contact-details">
+          <li>
+            <span class="contact-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M3 6.5 12 13l9-6.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.6"/></svg>
+            </span>
+            <a href="mailto:elonhuang123@gmail.com">elonhuang123@gmail.com</a>
+          </li>
+          <li>
+            <span class="contact-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><circle cx="12" cy="10" r="2.5" stroke="currentColor" stroke-width="1.6"/></svg>
+            </span>
+            <span>Remote-first · Serving clients worldwide</span>
+          </li>
+        </ul>
+      </div>
+
+      <form class="contact-form" id="contactForm"
+            action="https://formsubmit.co/elonhuang123@gmail.com"
+            method="POST"
+            target="formsubmitIframe"
+            data-reveal data-reveal-delay="160">
+        <input type="hidden" name="_subject" value="New project inquiry — WebForge Studio">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_captcha" value="false">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="cf-name">Name</label>
+            <input type="text" id="cf-name" name="name" autocomplete="name" required />
+          </div>
+          <div class="form-group">
+            <label for="cf-email">Email</label>
+            <input type="email" id="cf-email" name="email" autocomplete="email" required />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="cf-company">Company <span class="optional">(optional)</span></label>
+            <input type="text" id="cf-company" name="company" autocomplete="organization" />
+          </div>
+          <div class="form-group">
+            <label for="cf-budget">Estimated budget</label>
+            <select id="cf-budget" name="budget">
+              <option value="">Select a range</option>
+              <option value="under-500">Under $500</option>
+              <option value="500-1500">$500 – $1,500</option>
+              <option value="1500-3500">$1,500 – $3,500</option>
+              <option value="3500+">$3,500+</option>
+              <option value="not-sure">Not sure yet</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="cf-type">Project type</label>
+          <select id="cf-type" name="projectType">
+            <option value="new-site">New website</option>
+            <option value="redesign">Redesign of existing site</option>
+            <option value="ecommerce">Online store / e-commerce</option>
+            <option value="maintenance">Maintenance / support</option>
+            <option value="other">Something else</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="cf-message">Tell us about your project</label>
+          <textarea id="cf-message" name="message" rows="4" placeholder="What does your business do, and what would you like your website to help you achieve?" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-lg btn-block">
+          <span class="btn-label">Send Message</span>
+        </button>
+        <p class="form-success" id="formSuccess" role="status" aria-live="polite">Thanks! Your message has been sent — we'll be in touch within one business day.</p>
+      </form>
+      <iframe id="formsubmitIframe" name="formsubmitIframe" style="display:none" aria-hidden="true" title="form-target"></iframe>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <a href="#top" class="logo" aria-label="WebForge Studio — home">
+        <span class="logo-mark" aria-hidden="true">
+          <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="1" y="1" width="32" height="32" rx="8" fill="#f6f2e9"/>
+            <rect x="8" y="8" width="18" height="18" rx="2" fill="none" stroke="#0c1c33" stroke-width="2"/>
+            <rect x="13.5" y="13.5" width="7" height="7" rx="1" fill="#0c1c33" transform="rotate(45 17 17)"/>
+          </svg>
+        </span>
+        <span class="logo-text">WebForge<em>Studio</em></span>
+      </a>
+      <p>Websites designed and built to help small businesses grow online.</p>
+    </div>
+
+    <div class="footer-links">
+      <div class="footer-col">
+        <h4>Studio</h4>
+        <ul>
+          <li><a href="#process">Our Process</a></li>
+          <li><a href="#work">Portfolio</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#testimonials">Reviews</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#services">Website Design</a></li>
+          <li><a href="#services">E-Commerce</a></li>
+          <li><a href="#services">SEO &amp; Branding</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="mailto:elonhuang123@gmail.com">elonhuang123@gmail.com</a></li>
+          <li><a href="#contact">Contact Form</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom container">
+    <p>© <span id="year"></span> WebForge Studio. All rights reserved.</p>
+    <p>Designed &amp; built by WebForge Studio.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

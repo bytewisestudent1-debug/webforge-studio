@@ -1,0 +1,9 @@
+{
+  "name": "webforge-studio-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "WebForge Studio marketing website (static HTML/CSS/JS)",
+  "scripts": {
+    "start": "npx --yes serve ."
+  }
+}
