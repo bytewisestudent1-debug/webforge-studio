@@ -3,19 +3,99 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!-- Keep this site OUT of Google search. Remove this line if you ever want to be found again. -->
+<meta name="robots" content="noindex, nofollow" />
 <title>ScriptaForge — We Forge the Code That Powers Your Business</title>
 <meta name="description" content="ScriptaForge designs and builds fast, beautiful, conversion-ready websites for small businesses and growing brands — from first sketch to launch day." />
 <meta name="theme-color" content="#0c1c33" />
 <meta name="google-site-verification" content="7R_kZNHvvLkg_Lt3ryXvkqokvCp7_gUlf10piI82g0I" />
+
+<!-- Canonical -->
+<link rel="canonical" href="https://bytewisestudent1-debug.github.io/webforge-studio/" />
+
+<!-- Open Graph (Facebook, LinkedIn, etc.) -->
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="ScriptaForge" />
+<meta property="og:title" content="ScriptaForge — We Forge the Code That Powers Your Business" />
+<meta property="og:description" content="Fast, beautiful, conversion-ready websites for small businesses and growing brands — from first sketch to launch day." />
+<meta property="og:url" content="https://bytewisestudent1-debug.github.io/webforge-studio/" />
+<meta property="og:image" content="https://bytewisestudent1-debug.github.io/webforge-studio/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="ScriptaForge — web design & development studio" />
+
+<!-- Twitter / X card -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="ScriptaForge — We Forge the Code That Powers Your Business" />
+<meta name="twitter:description" content="Fast, beautiful, conversion-ready websites for small businesses and growing brands." />
+<meta name="twitter:image" content="https://bytewisestudent1-debug.github.io/webforge-studio/og-image.png" />
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230c1c33'/%3E%3Crect x='16' y='16' width='32' height='32' fill='none' stroke='%23d99a4e' stroke-width='3'/%3E%3Crect x='26' y='26' width='12' height='12' fill='%23d99a4e' transform='rotate(45 32 32)'/%3E%3C/svg%3E" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="styles.css" />
+
+<!-- Structured data: business profile (helps Google show rich results) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "ScriptaForge",
+  "description": "Web design and development studio building fast, conversion-focused websites for small businesses and growing brands.",
+  "url": "https://bytewisestudent1-debug.github.io/webforge-studio/",
+  "email": "elonhuang123@gmail.com",
+  "image": "https://bytewisestudent1-debug.github.io/webforge-studio/og-image.png",
+  "priceRange": "$$",
+  "areaServed": "Worldwide",
+  "serviceType": ["Website Design", "E-Commerce Development", "Website Redesign", "SEO", "Branding"],
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9",
+    "reviewCount": "30",
+    "bestRating": "5"
+  }
+}
+</script>
+
+<!-- Structured data: FAQ (eligible for FAQ rich snippets) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How long does a typical project take?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Most projects take 2–6 weeks from kickoff to launch, depending on scope and how quickly we receive feedback and content. Larger e-commerce or custom-feature builds may take a bit longer." }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does a website cost?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Projects start from $499 for a one-page Launch site and $2,499 for a multi-page Growth site. Every project is scoped individually and you'll get a clear, fixed-price quote after you send a few details through the contact form — no surprise fees." }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I own the website once it's finished?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. Once the project is paid in full, the code, design files, and content are yours outright — no lock-in and no recurring licensing fees." }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you offer support after launch?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. We offer optional maintenance and support plans for updates, hosting, and security patches — or you can manage everything yourself with a simple, easy-to-use CMS." }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you redesign or improve my existing website?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Absolutely. We regularly take over existing sites to modernize the design, improve performance, and fix usability issues — without losing your current SEO rankings." }
+    }
+  ]
+}
+</script>
 </head>
 <body>
-<a class="skip-link" href="#main">Skip to content</a> 
+<a class="skip-link" href="#main">Skip to content</a>
 
+<div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
 <div class="grain" aria-hidden="true"></div>
 
 <header class="site-header" id="siteHeader">
@@ -35,6 +115,7 @@
       <a href="#services" class="nav-link">Services</a>
       <a href="#process" class="nav-link">Process</a>
       <a href="#work" class="nav-link">Work</a>
+      <a href="#pricing" class="nav-link">Pricing</a>
       <a href="#faq" class="nav-link">FAQ</a>
       <a href="#testimonials" class="nav-link">Reviews</a>
       <a href="#about" class="nav-link">About</a>
@@ -64,18 +145,18 @@
         <p class="hero-sub">ScriptaForge plans, designs and builds fast, conversion-focused websites for small businesses and growing brands — from the first sketch to launch day, and every update after.</p>
         <div class="hero-actions">
           <a href="#contact" class="btn btn-primary btn-lg">Get a Free Quote</a>
-          <a href="#book-call" class="btn btn-ghost btn-lg">Book a Free Call</a>
+          <a href="#work" class="btn btn-ghost btn-lg">See Our Work</a>
         </div>
         <div class="hero-trust">
           <span class="hero-trust-badge">Starting from $499</span>
           <span class="hero-trust-sep" aria-hidden="true"></span>
-          <span class="hero-trust-badge">Free discovery call</span>
+          <span class="hero-trust-badge">Free no-obligation quote</span>
           <span class="hero-trust-sep" aria-hidden="true"></span>
           <span class="hero-trust-badge">30-day money-back guarantee</span>
         </div>
         <dl class="hero-stats">
           <div class="hero-stat">
-            <dt class="stat-num" data-count="120" data-suffix="+">0</dt>
+            <dt class="stat-num" data-count="30" data-suffix="+">0</dt>
             <dd>Sites launched</dd>
           </div>
           <div class="hero-stat">
@@ -136,7 +217,7 @@
 
           <rect class="bp-fill fill-4" x="328" y="286" width="86" height="50" rx="4" fill="#d99a4e" opacity="0.55"/>
           <rect class="bp-fill fill-4" x="328" y="346" width="86" height="8" rx="3" fill="#8a96a8"/>
-          <rect class="bp-fill fill-4" x="328" y="362" width="56" height="8" rx="3" fill="#8a96a8" opacity="0.6"/>
+          <rect class="bp-fill fill-4" x="328" y="362   " width="56" height="8" rx="3" fill="#8a96a8" opacity="0.6"/>
 
           <rect class="bp-fill fill-5" x="460" y="286" width="86" height="50" rx="4" fill="#6fcdc1" opacity="0.55"/>
           <rect class="bp-fill fill-5" x="460" y="346" width="86" height="8" rx="3" fill="#8a96a8"/>
@@ -161,13 +242,13 @@
   <!-- ============ TRUST STRIP ============ -->
   <div class="trust-strip">
     <div class="container trust-strip-inner">
-      <span>50+ Websites Built</span>
+      <span>30+ Websites Built</span>
       <span class="trust-dot" aria-hidden="true"></span>
       <span>4.9 / 5 Client Rating</span>
       <span class="trust-dot" aria-hidden="true"></span>
       <span>30-Day Money-Back Guarantee</span>
       <span class="trust-dot" aria-hidden="true"></span>
-      <span>Free Discovery Call</span>
+      <span>Free Project Quote</span>
       <span class="trust-dot" aria-hidden="true"></span>
       <span>Serving Clients Worldwide</span>
     </div>
@@ -417,6 +498,72 @@
     </div>
   </section>
 
+  <!-- ============ PRICING ============ -->
+  <section class="pricing" id="pricing">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <p class="eyebrow">Simple Pricing</p>
+        <h2 class="section-title">Clear packages, <em>no surprises</em></h2>
+        <p class="section-sub">Transparent starting prices so you can self-qualify before you reach out. Every project gets a fixed quote once you send us a few details — you'll never get a surprise invoice.</p>
+      </div>
+
+      <div class="pricing-grid">
+
+        <article class="price-card" data-reveal>
+          <div class="price-head">
+            <h3 class="price-name">Launch</h3>
+            <p class="price-tagline">A polished one-page site to get you online fast.</p>
+          </div>
+          <div class="price-amount"><span class="price-from">from</span><span class="price-figure">$499</span></div>
+          <ul class="price-features">
+            <li>Single-page custom design</li>
+            <li>Mobile &amp; tablet responsive</li>
+            <li>Contact form + Google Maps</li>
+            <li>Basic on-page SEO setup</li>
+            <li>Launch in ~1–2 weeks</li>
+          </ul>
+          <a href="#contact" class="btn btn-outline btn-block">Get Started</a>
+        </article>
+
+        <article class="price-card price-card-featured" data-reveal data-reveal-delay="80">
+          <span class="price-badge">Most popular</span>
+          <div class="price-head">
+            <h3 class="price-name">Growth</h3>
+            <p class="price-tagline">A multi-page site built to attract and convert.</p>
+          </div>
+          <div class="price-amount"><span class="price-from">from</span><span class="price-figure">$2,499</span></div>
+          <ul class="price-features">
+            <li>Up to 6 custom-designed pages</li>
+            <li>Copywriting guidance &amp; CMS</li>
+            <li>Advanced SEO &amp; analytics</li>
+            <li>Blog / resources section</li>
+            <li>2 rounds of revisions</li>
+            <li>30 days post-launch support</li>
+          </ul>
+          <a href="#contact" class="btn btn-primary btn-block">Start Your Project</a>
+        </article>
+
+        <article class="price-card" data-reveal data-reveal-delay="160">
+          <div class="price-head">
+            <h3 class="price-name">Custom</h3>
+            <p class="price-tagline">E-commerce, web apps &amp; everything bespoke.</p>
+          </div>
+          <div class="price-amount"><span class="price-figure">Let's talk</span></div>
+          <ul class="price-features">
+            <li>Online store &amp; payments</li>
+            <li>Custom features &amp; integrations</li>
+            <li>Unlimited pages &amp; scope</li>
+            <li>Branding &amp; identity work</li>
+            <li>Ongoing care plan options</li>
+          </ul>
+          <a href="#contact" class="btn btn-outline btn-block">Get a Quote</a>
+        </article>
+
+      </div>
+      <p class="section-footnote pricing-note">All plans include hosting setup, an SSL certificate, and our 30-day money-back guarantee. <a href="#contact">Get a tailored quote →</a></p>
+    </div>
+  </section>
+
   <!-- ============ FAQ ============ -->
   <section class="faq" id="faq">
     <div class="container">
@@ -444,7 +591,7 @@
             <span class="faq-icon" aria-hidden="true"></span>
           </summary>
           <div class="faq-answer">
-            <p>Every project is scoped individually based on the number of pages, features, and complexity involved. After a free discovery call, you'll get a clear, fixed-price quote — no surprise fees.</p>
+            <p>Every project is scoped individually based on the number of pages, features, and complexity involved. After you send a few details through the contact form, you'll get a clear, fixed-price quote — no surprise fees.</p>
           </div>
         </details>
 
@@ -658,26 +805,6 @@
     </div>
   </section>
 
-  <!-- ============ BOOK A CALL ============ -->
-  <section class="book-call" id="book-call">
-    <div class="container book-call-inner" data-reveal>
-      <div class="book-call-content">
-        <p class="eyebrow eyebrow-light">Free Discovery Call</p>
-        <h2 class="section-title section-title-light">Not sure where to start? <em>Let's talk.</em></h2>
-        <p class="section-sub section-sub-light">Book a free 30-minute call. We'll discuss your project, answer your questions, and give you a clear next step — no pressure, no strings attached.</p>
-        <ul class="book-call-perks">
-          <li>No sales pitch — just honest advice</li>
-          <li>Walk away with a clear action plan</li>
-          <li>Get a free quote on the spot</li>
-        </ul>
-      </div>
-      <div class="book-call-cta">
-        <a href="https://calendar.app.google/BGdWfoZp5wjbXeBh6" target="_blank" rel="noopener" class="btn btn-copper btn-xl">Book Your Free Call →</a>
-        <p class="book-call-note">Takes 30 seconds to book · Completely free</p>
-      </div>
-    </div>
-  </section>
-
   <!-- ============ CONTACT ============ -->
   <section class="contact" id="contact">
     <div class="hero-grid process-grid-bg" aria-hidden="true"></div>
@@ -814,9 +941,54 @@
   </div>
 </footer>
 
+<button class="back-to-top" id="backToTop" aria-label="Back to top" title="Back to top">
+  <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 19V6M6 12l6-6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+<!-- ============ HELPER CHAT BOT ============ -->
+<div class="chatbot" id="chatbot">
+  <!-- launcher bubble -->
+  <button class="chat-launcher" id="chatLauncher" aria-label="Open chat help" aria-expanded="false" aria-controls="chatPanel">
+    <svg class="chat-launcher-open" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 5.5h16a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H9l-4 3.5V16.5H4a1 1 0 0 1-1-1v-9a1 1 0 0 1 1-1Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><circle cx="8.5" cy="11" r="1.1" fill="currentColor"/><circle cx="12" cy="11" r="1.1" fill="currentColor"/><circle cx="15.5" cy="11" r="1.1" fill="currentColor"/></svg>
+    <svg class="chat-launcher-close" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+  </button>
+
+  <!-- chat panel -->
+  <div class="chat-panel" id="chatPanel" role="dialog" aria-label="ScriptaForge helper" aria-hidden="true">
+    <div class="chat-header">
+      <span class="chat-avatar" aria-hidden="true">
+        <svg width="22" height="22" viewBox="0 0 34 34" fill="none"><rect x="1" y="1" width="32" height="32" rx="8" fill="#0c1c33"/><rect x="8" y="8" width="18" height="18" rx="2" fill="none" stroke="#f2b768" stroke-width="2"/><rect x="13.5" y="13.5" width="7" height="7" rx="1" fill="#f2b768" transform="rotate(45 17 17)"/></svg>
+      </span>
+      <div class="chat-header-text">
+        <strong>Forge Helper</strong>
+        <span><span class="chat-status-dot" aria-hidden="true"></span> Usually replies instantly</span>
+      </div>
+    </div>
+
+    <div class="chat-messages" id="chatMessages" aria-live="polite"></div>
+
+    <div class="chat-quick" id="chatQuick">
+      <button type="button" data-q="pricing">💰 Pricing</button>
+      <button type="button" data-q="time">⏱️ How long?</button>
+      <button type="button" data-q="services">🛠️ What you do</button>
+      <button type="button" data-q="contact">✉️ Contact</button>
+    </div>
+
+    <form class="chat-input" id="chatForm" autocomplete="off">
+      <input type="text" id="chatText" placeholder="Type a question…" aria-label="Type your question" />
+      <button type="submit" aria-label="Send">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12 20 4l-6 16-3-7-7-1Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>
+      </button>
+    </form>
+  </div>
+</div>
+
 <script src="script.js"></script>
 
-<!--Start of Tawk.to Script — sign up at tawk.to, then replace YOUR_PROPERTY_ID/YOUR_WIDGET_ID below-->
+<!-- Live chat (Tawk.to) — DISABLED until configured.
+     To enable: sign up free at https://tawk.to, copy your Property ID and Widget ID
+     into the src below, then uncomment this block. Left off so no broken/404 script loads. -->
+<!--
 <script type="text/javascript">
 var Tawk_API=Tawk_API||{},Tawk_LoadStart=new Date();
 (function(){
@@ -828,6 +1000,6 @@ var Tawk_API=Tawk_API||{},Tawk_LoadStart=new Date();
   s0.parentNode.insertBefore(s1,s0);
 })();
 </script>
-<!--End of Tawk.to Script-->
+-->
 </body>
 </html>
